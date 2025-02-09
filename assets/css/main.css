@@ -3628,10 +3628,10 @@ input, select, textarea {
 				right: 0;
 			}
 
-		#banner p {
+		/* #banner p {
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
-		}
+		} */
 
 			#banner p a {
 				color: inherit;
@@ -3830,12 +3830,12 @@ input, select, textarea {
 			margin: 0 0 0.5em 0;
 		}
 
-		#main > header p {
+		/* #main > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 			top: 0;
-		}
+		} */
 
 			#main > header p a {
 				color: inherit;
@@ -3964,16 +3964,17 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding-top: 0;
+		background: none;
 	}
+
+  body {
+    background: linear-gradient(to bottom, #000214, #001c40, #180047);
+    color: white; /* Text color */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
 
 	body.landing #footer {
 		background-color: rgba(29, 36, 42, 0.9);
@@ -3985,15 +3986,245 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpeg");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
+    background: linear-gradient(to bottom, #000214, #001c40, #180047); /* Same gradient as desktop */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+  .outer-space {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000214, #001c40, #180047); /* Gradient colors */
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    flex-direction: column;
+  }
+
+  .outer-space .profile-header {
+    display: flex;
+    justify-content: center; /* Center name and role horizontally */
+    text-align: center;
+    flex-direction: column; /* Keeps the name and role stacked on top of each other */
+    margin-bottom: 0.5em; /* Adds space between name/role and the next section */
+  }
+
+  .outer-space .profile-info {
+    text-align: center; /* Centers the name and role text */
+  }
+
+  .outer-space .name {
+    font-size: 3em; /* Adjust the size of your name */
+    color: #f0f0f0;
+    font-weight: bold;
+    margin-bottom: 0.2em; /* Adds space between name and role */
+  }
+
+  .outer-space .role {
+    font-size: 1.5em;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 1em; /* Adds space below the role */
+  }
+
+  .outer-space .about-me-profile {
+    display: flex;
+    justify-content: space-between; /* Aligns the about section and profile picture side by side */
+    width: 70%; /* Controls the width of the content */
+    max-width: 1200px; /* Optional: Limits the max width */
+  }
+
+  .outer-space .about-me {
+    flex: 1; /* Makes about section take up more space */
+    margin-right: 2em; /* Adds space between the about section and the profile picture */
+  }
+
+  .outer-space .about-title {
+    font-size: 1.5em;
+    color: #f0f0f0;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 1em;
+  }
+
+  .outer-space .about-me p {
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .outer-space .profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 8px solid #2143a3;
+  }
+
+  /* .outer-space .more.scrolly {
+    font-size: 1.2em;
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-top: 2em;
+  }
+
+  .outer-space .more.scrolly:hover {
+    color: #2143a3;
+  } */
+
+  .outer-space .info {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column; /* Stack the info items vertically */
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .outer-space .info .list {
+    display: flex;
+    align-items: center;
+    margin: 0.3em 0;
+    width: 100%; /* Full width for each item */
+  }
+
+  /* Styling for the Download Resume Button */
+  .outer-space .download-btn {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    background-color: #222274; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .outer-space .download-btn:hover {
+    background-color: #2a0663; /* Darker shade for hover effect */
+    cursor: pointer;
+  }
+
+  .outer-space .download-btn:active {
+    background-color: #162c4d; /* Even darker shade for active click */
+  }
+
+  /* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .outer-space .profile-header {
+     flex-direction: row;
+     justify-content: space-between;
+  }
+
+  .outer-space .profile-info {
+     text-align: left;
+     margin-right: 2em;
+  }
+
+  .outer-space .about-me-profile {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     max-width: 1200px;
+  }
+
+  .outer-space .about-me {
+     flex: 1;
+     margin-right: 2em;
+     text-align: left;
+  }
+
+  .outer-space .profile-pic {
+     margin-top: 0;
+     margin-left: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  .outer-space .about-me-profile {
+     flex-direction: column;
+     align-items: center;
+  }
+
+  .outer-space .profile-pic {
+     margin-top: 1em;
+     margin-left: 0;
+  }
+
+  .outer-space .about-me {
+     margin-right: 0;
+     text-align: center;
+  }
+}
+
+.tech-stack {
+  background: linear-gradient(to bottom, #000214, #001c40, #180047);
+  color: #f0f0f0;
+  padding: 3em 0;
+}
+
+.tech-stack h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.tech-container {
+  margin-bottom: 2em;
+}
+
+.tech-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  max-width: 90%; /* Constrain the width */
+  margin: 0 auto;
+}
+
+.skil-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  text-align: center;
+}
+
+.skil-box span {
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+
+.devicons {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+.skil-box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .skills {
+      justify-content: space-around; /* Distribute evenly on smaller screens */
+  }
+}

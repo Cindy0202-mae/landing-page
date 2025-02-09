@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://kit.fontawesome.com/c8ce4fa207.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 	</head>
 	<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9TDP6M03E"></script>
@@ -48,37 +50,82 @@
 					</header>
 
 				<!-- Banner -->
-					<section id="banner">
-						<div class="inner"> <!-- <img src="cindy.jpeg" alt="Cindy Mae Ngoho" width="500" height="1000"/> -->
-							<h2>Cindy Mae Ngoho</h2>
-							<p>Aspiring Web Developer<br />
-							Software Engineering Fellow<br />
-							<a href="https://headstarter.co/">At Headstarter</a></p>
-							<ul class="actions special">
-							<!--	<li><a href="#" class="button primary">Activate</a></li> -->
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+        <section id="banner" class="outer-space">
+          <!-- Profile Header Section (Name, Role) -->
+          <div class="inner profile-header">
+            <!-- Name and Role -->
+            <div class="profile-info">
+              <h2 class="name">Cindy Mae Ngoho</h2>
+              <p class="role">Full-Stack Web Developer</p>
+            </div>
+          </div>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>About Me<br /></h2>
-								<p>
-									I'm currently an English teacher looking to transition into web development. After completing a Software Engineering fellowship at Headstarter, I’m now attending Le Wagon Tokyo, an intensive coding bootcamp.
-                  I'm seeking Frontend or Web Developer roles where I can apply my creativity and technical skills to new challenges. Let's connect and build something incredible together!<br /> <br />
-									The most recent version of my CV can be found <a href="https://drive.google.com/file/d/1jkb10WDvCJAQnWsgxxg_Os2uQ4IMyi_t/view?usp=sharing">here.</a>
-								</p>
-							</header>
-							<!-- <ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul> -->
-						</div>
-					</section>
+          <!-- About Me and Profile Picture Section -->
+          <div class="about-me-profile">
+            <div class="about-me">
+              <h3 class="about-title">About</h3>
+              <p>
+                I am a former educator transitioning into full-stack development. After gaining experience in software engineering through the Headstarter Fellowship, I took a leap to pursue intensive full-stack training at Le Wagon Tokyo, a six-month coding bootcamp. Now, I'm seeking Full-Stack or Front-End Engineer roles where I can apply my problem-solving skills, technical expertise, and passion for building user-friendly applications.
+              </p>
+            </div>
+            <!-- Profile Picture -->
+            <img src="images/profile.png" alt="Cindy Mae Ngoho" class="profile-pic" />
+          </div>
+
+          <!-- Info Section (Languages & Email) -->
+          <div class="info">
+            <div class="list">
+              <a href="https://drive.google.com/uc?export=download&id=1sCMvHvKutpvTqIhkNAONXMnKHrpCrWxI" download="Cindy_Mae_Ngoho_Resume" class="button download-btn">Download Resume</a>
+            </div>
+          </div>
+
+          <!-- Link to Learn More -->
+          <a href="#one" class="more scrolly">Learn More</a>
+        </section>
+
+
+				<!-- Tech Stack Section -->
+        <section id="one" class="tech-stack main special">
+          <header class="major">
+              <h2>My Tech Stacks</h2>
+          </header>
+
+          <!-- Frontend Section -->
+          <div class="frontend tech-container">
+              <h3>Frontend</h3>
+              <div class="skills">
+                  <div class="skil-box html"><span class="devicons devicon-html5-plain colored"></span><span>HTML</span></div>
+                  <div class="skil-box css"><span class="devicons devicon-css3-plain colored"></span><span>CSS</span></div>
+                  <div class="skil-box bootstrap"><span class="devicons devicon-bootstrap-plain colored"></span><span>Bootstrap</span></div>
+                  <div class="skil-box javascript"><span class="devicons devicon-javascript-plain colored"></span><span>JavaScript</span></div>
+                  <div class="skil-box typescript"><span class="devicons devicon-typescript-plain colored"></span><span>TypeScript</span></div>
+                  <div class="skil-box react"><span class="devicons devicon-react-original colored"></span><span>React.js</span></div>
+              </div>
+          </div>
+
+          <!-- Backend Section -->
+          <div class="backend tech-container">
+              <h3>Backend</h3>
+              <div class="skills">
+                  <div class="skil-box ruby"><span class="devicons devicon-ruby-plain colored"></span><span>Ruby</span></div>
+                  <div class="skil-box ruby-on-rails"><span class="devicons devicon-rails-plain colored"></span><span>Ruby on Rails</span></div>
+                  <div class="skil-box postgres"><span class="devicons devicon-postgresql-plain colored"></span><span>PostgreSQL</span></div>
+              </div>
+          </div>
+
+          <!-- Other Technologies Section -->
+          <div class="other-tech tech-container">
+              <h3>Other Technologies</h3>
+              <div class="skills">
+                  <div class="skil-box heroku"><span class="devicons devicon-heroku-plain colored"></span><span>Heroku</span></div>
+                  <div class="skil-box github"><span class="devicons devicon-git-plain colored"></span><span>GitHub</span></div>
+                  <div class="skil-box figma">
+                    <span class="devicons devicon-figma-plain colored"></span>
+                    <span>Figma</span>
+                  </div>
+                </div>
+          </div>
+        </section>
 
 				<!-- Projects-->
 					<section id="two" class="wrapper alt style2">
@@ -152,7 +199,7 @@
 					</section> -->
 
 				<!-- CTA -->
-			<!--	<section id="cta" class="wrapper style4">
+				<!-- <section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
 								<h2>Get in touch</h2>
