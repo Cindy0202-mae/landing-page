@@ -2298,32 +2298,32 @@ input, select, textarea {
 
 /* Icons */
 
-	ul.icons {
+	ul.footer-icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
 	}
 
-		ul.icons li {
+		ul.footer-icons li {
 			display: inline-block;
 			padding: 0 1em 0 0;
 		}
 
-			ul.icons li:last-child {
+			ul.footer-icons li:last-child {
 				padding-right: 0 !important;
 			}
 
-		ul.icons.major {
+		ul.footer-icons.major {
 			padding: 1em 0;
 		}
 
-			ul.icons.major li {
+			ul.footer-icons.major li {
 				padding-right: 3.5em;
 			}
 
 				@media screen and (max-width: 736px) {
 
-					ul.icons.major li {
+					ul.footer-icons.major li {
 						padding: 0 1em !important;
 					}
 
@@ -3890,16 +3890,16 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		#footer .icons {
-			font-size: 1.25em;
+		#footer .footer-icons {
+			font-size: 1.5em;
 		}
 
-			#footer .icons a {
+			#footer .footer-icons a {
 				color: rgba(255, 255, 255, 0.5);
 			}
 
-				#footer .icons a:hover {
-					color: #fff;
+				#footer .footer-icons a:hover {
+					color: #00b5fd;
 				}
 
 		#footer .copyright {
@@ -4256,8 +4256,8 @@ input, select, textarea {
 /* Project Card Style */
 .project-card {
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 450px;
+  height: 300px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -4339,11 +4339,11 @@ input, select, textarea {
 }
 
 .icon:hover {
-  color: #28a745; /* Green for demo */
+  color: #00bfff;  /* Green for demo */
 }
 
 .icon.github:hover {
-  color: #333; /* Dark grey for GitHub */
+  color: #00bfff; /* Dark grey for GitHub */
 }
 
 
