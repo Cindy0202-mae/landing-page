@@ -3974,7 +3974,7 @@ input, select, textarea {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
- }
+}
 
 	body.landing #footer {
 		background-color: rgba(29, 36, 42, 0.9);
@@ -4002,103 +4002,103 @@ input, select, textarea {
     padding: 3em 0;
     background: linear-gradient(to bottom, #000214, #001c40, #180047);
     color: #f0f0f0;
- }
+}
 
- .profile-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 1em;
- }
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1em;
+}
 
- .profile-info {
-    margin-bottom: 1em;
- }
+.profile-info {
+  margin-bottom: 1em;
+}
 
- .profile-pic {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin-top: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow around the picture */
- }
+.profile-pic {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow around the picture */
+}
 
- .profile-info h2 {
-    margin: 0;
-    font-size: 2em;
-    color: #f0f0f0;
- }
+.profile-info h2 {
+  margin: 0;
+  font-size: 2em;
+  color: #f0f0f0;
+}
 
- .profile-info p {
-    margin: 0;
-    font-size: 1.2em;
-    color: #f0f0f0;
- }
+.profile-info p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #f0f0f0;
+}
 
- .about-me-profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 1em;
- }
+.about-me-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 1em;
+}
 
- .about-me {
-    flex: 1;
-    margin-right: 2em;
-    text-align: left;
- }
+.about-me {
+  flex: 1;
+  margin-right: 2em;
+  text-align: left;
+}
 
- .about-me p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
- }
+.about-me p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
- .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
- }
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
 
- .list {
-    display: flex;
-    align-items: center;
-    margin-right: 1em;
- }
+.list {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
 
- .download-btn {
-    /* padding: 0.5em 1em; */
-    font-size: 0.9em;
-    margin-top: -0.5em; /* Move the button a little bit higher */
- }
+.download-btn {
+  /* padding: 0.5em 1em; */
+  font-size: 0.9em;
+  margin-top: -0.5em; /* Move the button a little bit higher */
+}
 
- .actions .button {
-    margin: 0.5em 0;
- }
+.actions .button {
+  margin: 0.5em 0;
+}
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .about-me-profile {
-       flex-direction: column;
-       align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     .profile-pic {
-       margin-top: 1em;
-       margin-left: 0;
+      margin-top: 1em;
+      margin-left: 0;
     }
 
     .about-me {
-       margin-right: 0;
-       text-align: center;
+      margin-right: 0;
+      text-align: center;
     }
 
     .profile-info h2 {
@@ -4112,9 +4112,9 @@ input, select, textarea {
     .about-me p {
        font-size: 1em; /* Decrease font size for smaller screens */
     }
- }
+}
 
- @media (max-width: 480px) {
+@media (max-width: 480px) {
     .profile-info h2 {
        font-size: 1.5em; /* Adjusted font-size for very small screens */
     }
@@ -4198,34 +4198,179 @@ input, select, textarea {
 
 @media (max-width: 768px) {
   .tech-stack .tech-stack-container {
-     flex-direction: column;
-     align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tech-card {
-     width: 100%;
-     max-width: 250px;
+    width: 100%;
+    max-width: 250px;
   }
 
   .tech-stack h2 {
-     font-size: 1.5em; /* Adjusted font-size for smaller screens */
+    font-size: 1.5em; /* Adjusted font-size for smaller screens */
   }
 
   .tech-card h3 {
-     font-size: 1.2em; /* Adjusted font-size for smaller screens */
+    font-size: 1.2em; /* Adjusted font-size for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .devicons {
-     font-size: 2em; /* Smaller for very small screens */
+    font-size: 2em; /* Smaller for very small screens */
   }
 
   .tech-stack h2 {
-     font-size: 1.2em; /* Adjusted font-size for very small screens */
+    font-size: 1.2em; /* Adjusted font-size for very small screens */
   }
 
   .tech-card h3 {
-     font-size: 1em; /* Adjusted font-size for very small screens */
+    font-size: 1em; /* Adjusted font-size for very small screens */
   }
+}
+
+/* Main Projects Section */
+#projects {
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #000214, #001c40, #180047);
+}
+
+#projects .major {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#projects .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+/* Project Card Style */
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside each project */
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Project Information (now overlays the entire image) */
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darkened background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-info {
+  opacity: 1;
+}
+
+/* Project Info Heading */
+.project-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+/* Project Description */
+.project-info p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+/* Icons Container (positioned over the image) */
+.icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Icons Style */
+.icon {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #28a745; /* Green for demo */
+}
+
+.icon.github:hover {
+  color: #333; /* Dark grey for GitHub */
+}
+
+
+.github-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #0056b3;
+}
+
+/* Shake Effect for the button */
+.shake-btn {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
