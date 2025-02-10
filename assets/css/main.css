@@ -3997,176 +3997,136 @@ input, select, textarea {
 	}
   .outer-space {
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #000214, #001c40, #180047); /* Gradient colors */
-    padding-top: 0.5em;
-    padding-bottom: 1em;
     flex-direction: column;
-  }
+    align-items: center;
+    padding: 3em 0;
+    background: linear-gradient(to bottom, #000214, #001c40, #180047);
+    color: #f0f0f0;
+ }
 
-  .outer-space .profile-header {
+ .profile-header {
     display: flex;
-    justify-content: center; /* Center name and role horizontally */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    flex-direction: column; /* Keeps the name and role stacked on top of each other */
-    margin-bottom: 0.5em; /* Adds space between name/role and the next section */
-  }
-
-  .outer-space .profile-info {
-    text-align: center; /* Centers the name and role text */
-  }
-
-  .outer-space .name {
-    font-size: 3em; /* Adjust the size of your name */
-    color: #f0f0f0;
-    font-weight: bold;
-    margin-bottom: 0.2em; /* Adds space between name and role */
-  }
-
-  .outer-space .role {
-    font-size: 1.5em;
-    color: #f0f0f0;
-    text-align: center;
-    margin-bottom: 1em; /* Adds space below the role */
-  }
-
-  .outer-space .about-me-profile {
-    display: flex;
-    justify-content: space-between; /* Aligns the about section and profile picture side by side */
-    width: 70%; /* Controls the width of the content */
-    max-width: 1200px; /* Optional: Limits the max width */
-  }
-
-  .outer-space .about-me {
-    flex: 1; /* Makes about section take up more space */
-    margin-right: 2em; /* Adds space between the about section and the profile picture */
-  }
-
-  .outer-space .about-title {
-    font-size: 1.5em;
-    color: #f0f0f0;
-    text-align: left;
-    text-decoration: underline;
     margin-bottom: 1em;
-  }
+ }
 
-  .outer-space .about-me p {
-    font-size: 1.2em;
-    text-align: left;
-    line-height: 1.6;
-    color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+ .profile-info {
+    margin-bottom: 1em;
+ }
 
-  .outer-space .profile-pic {
+ .profile-pic {
     border-radius: 50%;
     width: 250px;
     height: 250px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 8px solid #2143a3;
-  }
+    margin-top: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow around the picture */
+ }
 
-  /* .outer-space .more.scrolly {
+ .profile-info h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #f0f0f0;
+ }
+
+ .profile-info p {
+    margin: 0;
     font-size: 1.2em;
     color: #f0f0f0;
-    text-decoration: none;
-    margin-top: 2em;
-  }
+ }
 
-  .outer-space .more.scrolly:hover {
-    color: #2143a3;
-  } */
-
-  .outer-space .info {
-    margin-top: 0;
+ .about-me-profile {
     display: flex;
-    flex-direction: column; /* Stack the info items vertically */
+    flex-direction: row;
     align-items: center;
-    max-width: 1000px;
+    justify-content: space-between;
     width: 100%;
-  }
+    max-width: 1200px;
+    margin-top: 1em;
+ }
 
-  .outer-space .info .list {
+ .about-me {
+    flex: 1;
+    margin-right: 2em;
+    text-align: left;
+ }
+
+ .about-me p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+ }
+
+ .list {
     display: flex;
     align-items: center;
-    margin: 0.3em 0;
-    width: 100%; /* Full width for each item */
-  }
+    margin-right: 1em;
+ }
 
-  /* Styling for the Download Resume Button */
-  .outer-space .download-btn {
-    display: inline-block;
-    font-size: 1em;
-    color: #fff;
-    background-color: #222274; /* Button background color */
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
+ .download-btn {
+    /* padding: 0.5em 1em; */
+    font-size: 0.9em;
+    margin-top: -0.5em; /* Move the button a little bit higher */
+ }
 
-  .outer-space .download-btn:hover {
-    background-color: #2a0663; /* Darker shade for hover effect */
-    cursor: pointer;
-  }
+ .actions .button {
+    margin: 0.5em 0;
+ }
 
-  .outer-space .download-btn:active {
-    background-color: #162c4d; /* Even darker shade for active click */
-  }
+ @media (max-width: 768px) {
+    .about-me-profile {
+       flex-direction: column;
+       align-items: center;
+    }
 
-  /* Media Queries for Responsiveness */
-@media (min-width: 768px) {
-  .outer-space .profile-header {
-     flex-direction: row;
-     justify-content: space-between;
-  }
+    .profile-pic {
+       margin-top: 1em;
+       margin-left: 0;
+    }
 
-  .outer-space .profile-info {
-     text-align: left;
-     margin-right: 2em;
-  }
+    .about-me {
+       margin-right: 0;
+       text-align: center;
+    }
 
-  .outer-space .about-me-profile {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-between;
-     width: 100%;
-     max-width: 1200px;
-  }
+    .profile-info h2 {
+       font-size: 1.8em; /* Decrease font size for smaller screens */
+    }
 
-  .outer-space .about-me {
-     flex: 1;
-     margin-right: 2em;
-     text-align: left;
-  }
+    .profile-info p {
+       font-size: 1em; /* Decrease font size for smaller screens */
+    }
 
-  .outer-space .profile-pic {
-     margin-top: 0;
-     margin-left: 2em;
-  }
-}
+    .about-me p {
+       font-size: 1em; /* Decrease font size for smaller screens */
+    }
+ }
 
-@media (max-width: 767px) {
-  .outer-space .about-me-profile {
-     flex-direction: column;
-     align-items: center;
-  }
+ @media (max-width: 480px) {
+    .profile-info h2 {
+       font-size: 1.5em; /* Adjusted font-size for very small screens */
+    }
 
-  .outer-space .profile-pic {
-     margin-top: 1em;
-     margin-left: 0;
-  }
+    .profile-info p {
+       font-size: 0.9em; /* Adjusted font-size for very small screens */
+    }
 
-  .outer-space .about-me {
-     margin-right: 0;
-     text-align: center;
-  }
-}
+    .about-me p {
+       font-size: 0.9em; /* Adjusted font-size for very small screens */
+    }
+ }
 
 .tech-stack {
   background: linear-gradient(to bottom, #000214, #001c40, #180047);
