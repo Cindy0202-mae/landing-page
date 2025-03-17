@@ -3594,7 +3594,6 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -4009,7 +4008,7 @@ input, select, textarea {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 .profile-info {
@@ -4033,8 +4032,9 @@ input, select, textarea {
 
 .profile-info p {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #f0f0f0;
+  font-style: italic;
 }
 
 .about-me-profile {
@@ -4044,7 +4044,7 @@ input, select, textarea {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .about-me {
