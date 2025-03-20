@@ -1775,7 +1775,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 2em 0;
+		margin: 3em 0 2em 0;
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -4047,11 +4047,13 @@ input, select, textarea {
   height: 100vh;
 }
 
-.tech-stack .tech-stack-container {
+.tech-stack-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1em;
+  margin-top: 5em;
+  gap: 40px;
+  padding: 20px;
 }
 
 .tech-stack h2 {
@@ -4061,14 +4063,15 @@ input, select, textarea {
 
 .tech-card {
   flex: 1;
-  min-width: 250px;
-  max-width: 400px;
-  padding: 1em;
+  width: 300px;
+  /* max-width: 500px; */
+  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #292e81;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  justify-content: center;
 }
 
 .tech-card h3 {
@@ -4079,7 +4082,7 @@ input, select, textarea {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 20px;
   justify-content: center;
 }
 
