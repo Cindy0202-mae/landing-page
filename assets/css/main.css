@@ -4271,6 +4271,7 @@ input, select, textarea {
 }
 
 .github-button {
+  margin-top: 40px;
   padding: 12px 20px;
   background-color: #020620;
   color: white;
