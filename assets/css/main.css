@@ -4166,19 +4166,18 @@ input, select, textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
 }
 
 /* Project Card Style */
 .project-card {
-  position: relative;
-  width: 500px;
-  height: 300px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -4188,10 +4187,9 @@ input, select, textarea {
 }
 
 /* Image inside each project */
-.project-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.project-image, .project-video {
+  flex: 1;
+  overflow: hidden;
 }
 
 .project-image img {
@@ -4202,19 +4200,12 @@ input, select, textarea {
 
 /* Project Information (now overlays the entire image) */
 .project-info {
-  position: absolute;
-  padding: 12px 20px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(74, 112, 248, 0.9); /* Slightly darkened background */
+  flex: 1;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  justify-content: center;
 }
 
 .project-card:hover .project-info {
@@ -4225,7 +4216,7 @@ input, select, textarea {
 .project-info h3 {
   margin-bottom: 10px;
   font-size: 1.5rem;
-  color: white;
+  color: rgb(21, 20, 20);
   text-align: center;
 }
 
@@ -4233,25 +4224,21 @@ input, select, textarea {
 .project-info p {
   margin-bottom: 15px;
   font-size: 1rem;
-  color: white;
+  color: rgb(16, 3, 3);
   text-align: center;
 }
 
 /* Icons Container (positioned over the image) */
 .icons {
   display: flex;
-  gap: 15px;
-  justify-content: center;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  justify-content: flex-start; /* Align icons to the left */
+  gap: 10px;
 }
 
 /* Icons Style */
-.icon {
+.icons a {
   font-size: 2rem;
-  color: white;
+  color: rgb(5, 2, 2);
   transition: color 0.3s ease;
   text-decoration: none;
 }
