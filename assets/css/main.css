@@ -4173,7 +4173,8 @@ input, select, textarea {
 .project-card {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
+  max-width: 800px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -4226,6 +4227,19 @@ input, select, textarea {
   font-size: 1rem;
   color: rgb(16, 3, 3);
   text-align: center;
+}
+
+.project-tech-stack {
+  margin-bottom: 10px;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 10px; /* Adjust gap between icons */
+}
+
+.tech-icons .devicons {
+  font-size: 2em; /* Adjust icon size as needed */
 }
 
 /* Icons Container (positioned over the image) */
