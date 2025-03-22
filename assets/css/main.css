@@ -4231,11 +4231,14 @@ input, select, textarea {
 
 .project-tech-stack {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .tech-icons {
   display: flex;
-  gap: 10px; /* Adjust gap between icons */
+  gap: 5px; /* Adjust gap between icons */
 }
 
 .tech-icons .devicons {
