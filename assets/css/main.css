@@ -4112,40 +4112,6 @@ input, select, textarea {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .tech-stack .tech-stack-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tech-card {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .tech-stack h2 {
-    font-size: 1.5em; /* Adjusted font-size for smaller screens */
-  }
-
-  .tech-card h3 {
-    font-size: 1.2em; /* Adjusted font-size for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .devicons {
-    font-size: 2em; /* Smaller for very small screens */
-  }
-
-  .tech-stack h2 {
-    font-size: 1.2em; /* Adjusted font-size for very small screens */
-  }
-
-  .tech-card h3 {
-    font-size: 1em; /* Adjusted font-size for very small screens */
-  }
-}
-
 /* Main Projects Section */
 #projects {
   padding: 50px 20px;
@@ -4239,10 +4205,11 @@ input, select, textarea {
 .tech-icons {
   display: flex;
   gap: 5px; /* Adjust gap between icons */
+  font-size: 1rem;
 }
 
 .tech-icons .devicons {
-  font-size: 2em; /* Adjust icon size as needed */
+  font-size: 1em; /* Adjust icon size as needed */
 }
 
 /* Icons Container (positioned over the image) */
@@ -4254,7 +4221,7 @@ input, select, textarea {
 
 /* Icons Style */
 .icons a {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: rgb(5, 2, 2);
   transition: color 0.3s ease;
   text-decoration: none;
