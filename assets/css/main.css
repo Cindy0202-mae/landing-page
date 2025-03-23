@@ -2303,6 +2303,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+    font-size: 1.8rem;
 	}
 
 		ul.footer-icons li {
@@ -3436,7 +3437,7 @@ input, select, textarea {
         @media screen and (max-width: 736px) {
 
           #header nav > ul > li > a {
-            padding: 0 0 0 1.5em;
+            padding: 0 1rem 0 1.5em;
           }
 
         }
@@ -3470,7 +3471,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		cursor: default;
-		height: 100vh;
+		/* height: 100vh; */
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
@@ -3599,7 +3600,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 7em 3em 5em 3em ;
+				padding: 2em 3em 2em 3em ;
 				height: auto;
 				min-height: 0;
 			}
@@ -3994,37 +3995,129 @@ input, select, textarea {
   margin: 0.5em 0;
 }
 
-@media (max-width: 768px) {
-    .about-me-profile {
-      flex-direction: column;
-      align-items: center;
-    }
+/* Media query for screens with a max width of 1360px */
+@media (max-width: 1360px) {
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+}
 
-    .profile-pic {
-      margin-top: 1em;
-      margin-left: 0;
-    }
+  .profile-header {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+  }
 
-    .about-me {
-      margin-right: 0;
-      text-align: center;
-    }
+  .profile-info {
+    margin-bottom: 20px;
+  }
 
-    .profile-info h2 {
-       font-size: 1.8em; /* Decrease font size for smaller screens */
-    }
+  .about-me-profile {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+}
 
-    .profile-info p {
-       font-size: 1em; /* Decrease font size for smaller screens */
-    }
+  .about-me {
+    margin-top: 20px;
+  }
 
-    .about-me p {
-      font-size: 1em;
-      padding: 30px;
-      text-align: center;
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .list {
+    margin-top: 20px;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
+/* Media query for screens with a max width of 768px */
+@media (max-width: 768px) {
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    margin-bottom: 20px;
+  }
+
+  .profile-info .role {
+    font-size: 1rem;
+  }
+
+  .about-me-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+  .about-me {
+    margin-top: 20px;
+  }
+
+  .about-me p {
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+  }
+
+  .list {
+    margin-top: 20px;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .tech-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 @media (max-width: 480px) {
     .profile-info h2 {
        font-size: 1.5em; /* Adjusted font-size for very small screens */
@@ -4036,6 +4129,7 @@ input, select, textarea {
 
     .about-me p {
        font-size: 0.9em; /* Adjusted font-size for very small screens */
+       text-align: center;
     }
 }
 
@@ -4044,14 +4138,14 @@ input, select, textarea {
   color: #f0f0f0;
   padding: 3em 0;
   max-width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .tech-stack-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 5em;
+  /* margin-top: 5em; */
   gap: 40px;
   padding: 20px;
 }
@@ -4063,7 +4157,11 @@ input, select, textarea {
 
 .tech-card {
   flex: 1;
-  width: 300px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
   /* max-width: 500px; */
   padding: 20px;
   border: 1px solid #ddd;
@@ -4071,12 +4169,16 @@ input, select, textarea {
   background-color: #292e81;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  justify-content: center;
 }
 
-.tech-card h3 {
+.tech-title h3 {
   font-size: 1.5em;
   margin-bottom: 1em;
+  text-align: center;
+  min-height: 2.5em; /* Set a consistent height for h3 elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills {
@@ -4130,6 +4232,7 @@ input, select, textarea {
 
 #projects .projects-container {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
@@ -4196,20 +4299,23 @@ input, select, textarea {
 }
 
 .project-tech-stack {
-  margin-bottom: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 .tech-icons {
   display: flex;
   gap: 5px; /* Adjust gap between icons */
   font-size: 1rem;
+  opacity: 0.8;
 }
 
 .tech-icons .devicons {
-  font-size: 1em; /* Adjust icon size as needed */
+  font-size: 2em; /* Adjust icon size as needed */
 }
 
 /* Icons Container (positioned over the image) */
@@ -4217,6 +4323,7 @@ input, select, textarea {
   display: flex;
   justify-content: flex-start; /* Align icons to the left */
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 /* Icons Style */
