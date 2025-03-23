@@ -4232,6 +4232,7 @@ input, select, textarea {
 
 #projects .projects-container {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
@@ -4298,20 +4299,23 @@ input, select, textarea {
 }
 
 .project-tech-stack {
-  margin-bottom: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 .tech-icons {
   display: flex;
   gap: 5px; /* Adjust gap between icons */
   font-size: 1rem;
+  opacity: 0.8;
 }
 
 .tech-icons .devicons {
-  font-size: 1em; /* Adjust icon size as needed */
+  font-size: 2em; /* Adjust icon size as needed */
 }
 
 /* Icons Container (positioned over the image) */
@@ -4319,6 +4323,7 @@ input, select, textarea {
   display: flex;
   justify-content: flex-start; /* Align icons to the left */
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 /* Icons Style */
