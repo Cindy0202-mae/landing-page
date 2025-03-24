@@ -4204,7 +4204,7 @@ input, select, textarea {
 }
 
 .devicons {
-  font-size: 2em !important;
+  /* font-size: 2em !important; */
   display: block;
   margin-bottom: 0.5em;
 }
@@ -4243,7 +4243,7 @@ input, select, textarea {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -4324,6 +4324,56 @@ input, select, textarea {
   justify-content: flex-start; /* Align icons to the left */
   gap: 10px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    flex-direction: column; /* Stack video on top and description at the bottom */
+    max-height: none;
+  }
+
+  .project-info {
+    text-align: center; /* Center text for smaller screens */
+    padding: 10px;
+  }
+
+  .project-tech-stack {
+     justify-content: space-between; /* Center tech stack icons for smaller screens */
+  }
+
+  .icons {
+     justify-content: center; /* Center action icons for smaller screens */
+  }
+
+  .tech-icons .devicons {
+     font-size: 1.5em; /* Adjust icon size for smaller screens */
+  }
+
+  .project-info h3 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
+  .project-info p {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  #projects h2 {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  #projects p {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .tech-stack h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .tech-icons img {
+    width: 25px; /* Adjust width for smaller screens */
+    height: 25px; /* Adjust height for smaller screens */
+  }
 }
 
 /* Icons Style */
