@@ -4345,8 +4345,11 @@ input, select, textarea {
      justify-content: center; /* Center action icons for smaller screens */
   }
 
-  .tech-icons .devicons {
-     font-size: 1.5em; /* Adjust icon size for smaller screens */
+  .tech-icons .devicons,
+  .tech-icons img {
+    width: 20px; /* Adjust width for smaller screens */
+    height: 20px; /* Adjust height for smaller screens */
+    font-size: 1.2em; /* Adjust icon size for smaller screens */
   }
 
   .project-info h3 {
@@ -4368,11 +4371,6 @@ input, select, textarea {
   .tech-stack h2 {
     font-size: 1em;
     text-align: center;
-  }
-
-  .tech-icons img {
-    width: 25px; /* Adjust width for smaller screens */
-    height: 25px; /* Adjust height for smaller screens */
   }
 }
 
