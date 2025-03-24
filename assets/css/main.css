@@ -4390,3 +4390,54 @@ input, select, textarea {
   margin-bottom: 10px;
   font-size: 1.5em;
 }
+
+/* Styles for the toggle menu */
+.menuToggle {
+  display: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #nav ul {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+    text-decoration: none;
+  }
+
+  .menu {
+    display: block;
+    background-color: #292e81;
+    position: absolute;
+    font-size: 1em;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+  }
+
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+}
