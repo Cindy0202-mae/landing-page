@@ -605,8 +605,8 @@ hr {
 /* Table */
 
 	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		/* -webkit-overflow-scrolling removed (non-standard / unsupported) */
 	}
 
 	table {
@@ -790,7 +790,7 @@ hr {
 		-webkit-transition: -webkit-transform 0.5s ease;
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
-		-webkit-overflow-scrolling: touch;
+		/* -webkit-overflow-scrolling removed (non-standard / unsupported) */
 		background: #21b2a6;
 		color: #ffffff;
 		height: 100%;
@@ -1384,17 +1384,6 @@ hr {
   display: flex;
   align-items: center;
   margin-right: 1em;
-}
-
-.download-btn {
-  /* padding: 0.5em 1em; */
-  font-size: 0.9em;
-  margin-top: -0.5em; /* Move the button a little bit higher */
-}
-
-.download-btn:hover {
-  background-color: #3e0543;
-  transform: scale(1.05); /* Slight zoom-in effect */
 }
 
 .actions .button {
