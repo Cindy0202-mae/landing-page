@@ -1,45 +1,41 @@
-Spectral by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Cindy Mae Ngoho - Portfolio
 
+A personal portfolio website showcasing my work as a full-stack web developer. Built using the Spectral template by HTML5 UP, customized for a clean, professional look.
 
-A big, modern, blocky affair with a mobile-style menu, fully responsive styling,
-and an assortment of pre-styled elements. So, pretty much what you were expecting
--- except, of course, for how it's put together, specifically:
+## Features
 
-- It's built with components from my Responsive Tools project.
+- **Responsive Design**: Fully responsive layout that works on all devices.
+- **Sections**: Includes About, Tech Stacks, Projects, and Contact information.
+- **Modern Styling**: Uses flexbox for clean layouts and Sass for efficient styling.
+- **Interactive Elements**: Hover effects, animations, and mobile-friendly menu.
 
-- It uses flexbox, which eliminates all kinds of terrible hacks and clunky layout
-  stopgaps (like CSS grid systems).
+## Technologies Used
 
-- It uses Sass* a lot more intelligently, thanks in part to several new mixins
-  and functions I've been working on (as well as a few by @HugoGiraudel).
+- HTML5, CSS3, JavaScript
+- Sass for styling
+- Font Awesome for icons
+- Responsive Tools for layout
 
-  (* = still entirely optional if you prefer vanilla CSS :)
+## Live Demo
 
-- A ton of other stuff.
+Visit the live portfolio at [[your live URL, e.g., https://cindymaengoho.github.io/portfolio](https://cindy-ngoho-dev.vercel.app/)].
 
-In short, Spectral's the culmination of several new things I'm working on/trying out,
-so please, let me know what you think :)
+## Setup
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+1. Clone the repository.
+2. Open `index.html` in a browser or use a local server.
+3. Customize content in the HTML files as needed.
 
-(* = not included)
+## Credits
 
-AJ
-aj@lkn.io | @ajlkn
+- **Template**: Spectral by HTML5 UP (html5up.net | @ajlkn) - Free for personal and commercial use under the CCA 3.0 license (html5up.net/license).
+- **Demo Images**: Unsplash (unsplash.com)
+- **Icons**: Font Awesome (fontawesome.io)
+- **Other**: jQuery (jquery.com), Scrollex (github.com/ajlkn/jquery.scrollex), Responsive Tools (github.com/ajlkn/responsive-tools)
 
+## Contact
 
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Cindy Mae Ngoho
+Email: cindyngohojobhunt@gmail.com
+GitHub: [https://github.com/Cindy0202-mae](https://github.com/Cindy0202-mae)
+LinkedIn: [https://www.linkedin.com/in/cindy-ngoho/](https://www.linkedin.com/in/cindy-ngoho/)
