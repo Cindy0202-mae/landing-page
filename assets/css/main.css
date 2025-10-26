@@ -1464,10 +1464,8 @@ body.is-mobile.landing #footer {
     margin-top: 20px;
   }
 
-  .tech-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .tech-card h3 {
+    font-size: 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -1500,15 +1498,8 @@ body.is-mobile.landing #footer {
 }
 
 .tech-card {
-  /* Remove background, border, and shadow for a clean, box-free look */
   padding: 20px;
   text-align: center;
-  /* No background, border, or box-shadow */
-}
-
-/* Remove hover lift effect to keep it minimal */
-.tech-card:hover {
-  /* No transform or shadow changes */
 }
 
 .tech-stack h2 {
@@ -1554,7 +1545,6 @@ body.is-mobile.landing #footer {
 
 .skil-box span {
   margin-top: 0.5em;
-  font-size: 1em;
   color: #000000; /* Consistent dark text */
 }
 
@@ -1725,6 +1715,11 @@ body.is-mobile.landing #footer {
   }
 
   .tech-stack h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .tech-title h3 {
     font-size: 1em;
     text-align: center;
   }
