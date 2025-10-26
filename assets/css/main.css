@@ -218,7 +218,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333; /* Primary heading color */
+  color: #121212; /* Primary heading color */
   font-weight: 600; /* Slightly lighter for subtlety */
   letter-spacing: 0.225em;
   line-height: 1.4em; /* Increased for headings */
@@ -1493,43 +1493,42 @@ body.is-mobile.landing #footer {
 }
 
 .tech-stack-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /* margin-top: 5em; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   padding: 20px;
 }
 
-.tech-stack h2 {
-  font-size: 2em;
+.tech-card {
+  /* Remove background, border, and shadow for a clean, box-free look */
+  padding: 20px;
   text-align: center;
+  /* No background, border, or box-shadow */
 }
 
-.tech-card {
-  flex: 1;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  /* max-width: 500px; */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #292e81;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Remove hover lift effect to keep it minimal */
+.tech-card:hover {
+  /* No transform or shadow changes */
+}
+
+.tech-stack h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
   text-align: center;
+  color: #000000; /* Dark text for contrast on light background */
+  font-weight: 700;
 }
 
 .tech-title h3 {
   font-size: 1.5em;
   margin-bottom: 1em;
   text-align: center;
-  min-height: 2.5em; /* Set a consistent height for h3 elements */
+  min-height: 2.5em;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #000000; /* Dark text for contrast on light background */
+  font-weight: 700;
 }
 
 .skills {
@@ -1546,23 +1545,24 @@ body.is-mobile.landing #footer {
   justify-content: center;
   width: 90px;
   text-align: center;
+  transition: opacity 0.3s ease; /* Subtle hover for cleanliness */
+}
+
+.skil-box:hover {
+  opacity: 0.8; /* Gentle fade instead of scale/color change */
 }
 
 .skil-box span {
   margin-top: 0.5em;
   font-size: 1em;
-  color: #ffffff;
+  color: #000000; /* Consistent dark text */
 }
 
 .devicons {
-  /* font-size: 2em !important; */
+  font-size: 2.5em;
   display: block;
   margin-bottom: 0.5em;
-}
-
-.skil-box:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+  color: #333333; /* Neutral icon color */
 }
 
 /* Main Projects Section */
@@ -1577,7 +1577,11 @@ body.is-mobile.landing #footer {
 }
 
 #projects h2 {
-  font-size: 2rem;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: #000000; /* Dark text for contrast on light background */
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -1734,7 +1738,7 @@ body.is-mobile.landing #footer {
   text-decoration: none;
 }
 
-.icon:hover {
+icon:hover {
   color: #95b0af;
 }
 
@@ -1892,6 +1896,7 @@ body.is-mobile.landing #footer {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
+  text-align: justify; /* Justify text for even alignment */
 }
 
 .contact-info {
@@ -1902,6 +1907,11 @@ body.is-mobile.landing #footer {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.footer-icons {
+  justify-content: flex-start; /* Align icons to the left */
+  margin-bottom: 1rem;
 }
 
 /* Media query for tablets (768px and below) */
@@ -1997,8 +2007,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
-
 #header nav > ul > li > a:hover {
-  color: #ffffff;
   border-bottom: 2px solid #fdffff;
+  color: #ffffff;
 }
