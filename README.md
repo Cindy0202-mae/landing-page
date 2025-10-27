@@ -7,7 +7,7 @@ A personal portfolio website showcasing my work as a full-stack web developer. B
 - **Responsive Design**: Fully responsive layout that works on all devices.
 - **Sections**: Includes About, Tech Stacks, Projects, and Contact information.
 - **Modern Styling**: Uses flexbox for clean layouts and Sass for efficient styling.
-- **Interactive Elements**: Hover effects, animations, and mobile-friendly menu.
+- **Interactive Elements**: Hover effects, animations, and a mobile-friendly menu.
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ A personal portfolio website showcasing my work as a full-stack web developer. B
 
 ## Live Demo
 
-Visit the live portfolio at [[your live URL, e.g., https://cindymaengoho.github.io/portfolio](https://cindy-ngoho-dev.vercel.app/)].
+Visit the live portfolio at [https://cindymaengoho.github.io/portfolio](https://cindy-ngoho-dev.vercel.app/).
 
 ## Setup
 
