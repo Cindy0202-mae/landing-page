@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400italic,600,600italic,800,800italic");
 
 /*
 	Spectral by HTML5 UP
@@ -172,7 +172,7 @@ input,
 select,
 textarea {
   color: #fff; /* Primary text color */
-  font-family: "Inter", sans-serif; /* Cleaner sans-serif font stack */
+  font-family: "Poppins", sans-serif; /* Change to Poppins */
   font-size: 15pt;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -372,9 +372,8 @@ header.major h3,
 header.major h4,
 header.major h5,
 header.major h6 {
-  border-bottom: solid 2px #fff;
+  border-bottom: 1px solid #333333; /* Thinner line, darker color */
   display: inline-block;
-  /* padding-bottom: 1em; */
   position: relative;
 }
 
@@ -761,7 +760,7 @@ ul.footer-icons.major li {
   -webkit-transition: -webkit-transform 0.5s ease;
   -ms-transition: -ms-transform 0.5s ease;
   transition: transform 0.5s ease;
-  background: #262626;
+  background: #6f6f6f;
   color: #ffffff;
   height: 100%;
   max-width: 80%;
@@ -1002,7 +1001,7 @@ body.is-menu-visible #menu {
   transition: transform 0.5s ease, opacity 0.5s ease;
   display: inline-block;
   opacity: 1;
-  padding: 0.35em 1em;
+  padding: 0.35em 0;
   position: relative;
   z-index: 1;
 }
@@ -1043,52 +1042,6 @@ body.is-menu-visible #menu {
   color: inherit;
 }
 
-/* #banner .more {
-			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
-			-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
-			-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
-			transition: transform 0.75s ease, opacity 0.75s ease;
-			-moz-transition-delay: 3.5s;
-			-webkit-transition-delay: 3.5s;
-			-ms-transition-delay: 3.5s;
-			transition-delay: 3.5s;
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			border: none;
-			bottom: 0;
-			color: inherit;
-			font-size: 0.8em;
-			height: 8.5em;
-			left: 50%;
-			letter-spacing: 0.225em;
-			margin-left: -8.5em;
-			opacity: 1;
-			outline: 0;
-			padding-left: 0.225em;
-			position: absolute;
-			text-align: center;
-			text-transform: uppercase;
-			width: 16em;
-			z-index: 1;
-		}
-
-			#banner .more:after {
-				background-image: url("images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				bottom: 4em;
-				content: '';
-				display: block;
-				height: 1.5em;
-				left: 50%;
-				margin: 0 0 0 -0.75em;
-				position: absolute;
-				width: 1.5em;
-			} */
-
 #banner:after {
   pointer-events: none;
   -moz-transition: opacity 3s ease-in-out;
@@ -1100,7 +1053,7 @@ body.is-menu-visible #menu {
   -ms-transition-delay: 1.25s;
   transition-delay: 1.25s;
   content: "";
-  background: #c4c5c7;
+  background: #e5e5e5;
   display: block;
   width: 100%;
   height: 100%;
@@ -1175,8 +1128,8 @@ body.is-mobile #main > header {
   color: rgba(255, 255, 255, 0.5);
 }
 
-#footer .footer-icons a:hover {
-  color: #00b5fd;
+.footer-icons a:hover {
+  color: #f7a14a;
 }
 
 #footer .copyright {
@@ -1402,11 +1355,6 @@ body.is-mobile.landing #footer {
   .list {
     margin-top: 20px;
   }
-
-  .download-btn {
-    width: 100%;
-    max-width: 300px;
-  }
 }
 
 /* Media query for screens with a max width of 768px */
@@ -1508,6 +1456,7 @@ body.is-mobile.landing #footer {
   text-align: center;
   color: #000000; /* Dark text for contrast on light background */
   font-weight: 700;
+  border-bottom: 1px solid #333333; /* Add matching line */
 }
 
 .tech-title h3 {
@@ -1540,7 +1489,8 @@ body.is-mobile.landing #footer {
 }
 
 .skil-box:hover {
-  opacity: 0.8; /* Gentle fade instead of scale/color change */
+  opacity: 1; /* Gentle fade instead of scale/color change */
+  transform: translateY(-5px);
 }
 
 .skil-box span {
@@ -1733,12 +1683,8 @@ body.is-mobile.landing #footer {
   text-decoration: none;
 }
 
-icon:hover {
-  color: #95b0af;
-}
-
 .icon.github:hover {
-  color: #95b0af;
+  color: #e67d0c;
 }
 
 .github-button-container {
@@ -1760,7 +1706,7 @@ icon:hover {
 }
 
 .github-button:hover {
-  background-color: #95b0af;
+  background-color: #e67d0c;
   color: #000000;
 }
 
