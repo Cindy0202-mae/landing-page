@@ -1,88 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cindy Mae Ngoho - Full-Stack Web Developer</title>
-    <meta name="description" content="Portfolio of Cindy Mae Ngoho, a full-stack web developer based in Japan.">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-    <script src="https://kit.fontawesome.com/c8ce4fa207.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <meta
+      name="description"
+      content="Portfolio of Cindy Mae Ngoho, a full-stack web developer based in Japan."
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <script
+      src="https://kit.fontawesome.com/c8ce4fa207.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9TDP6M03E"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q9TDP6M03E"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-Q9TDP6M03E');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q9TDP6M03E");
     </script>
-</head>
-<body class="landing is-preload">
+  </head>
+  <body class="landing is-preload">
     <div id="page-wrapper">
-        <header id="header" class="alt">
-          <h1><a href="#banner"><img src="images/Cindy_Mae.png" alt="Logo" class="logo"></a></h1>
-          <nav id="nav">
+      <header id="header" class="alt">
+        <h1>
+          <a href="#banner"
+            ><img src="images/Cindy_Mae.png" alt="Logo" class="logo"
+          /></a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="#techStacks">Tech Stacks</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+          <a
+            href="#menu"
+            class="menuToggle"
+            aria-label="Open menu"
+            title="Open menu"
+          >
+            <span><i class="fa-solid fa-bars" aria-hidden="true"></i></span>
+            <span class="sr-only">Open menu</span>
+          </a>
+          <div id="menu" class="menu">
             <ul>
               <li><a href="#techStacks">Tech Stacks</a></li>
               <li><a href="#projects">Projects</a></li>
             </ul>
-            <a href="#menu" class="menuToggle" aria-label="Open menu" title="Open menu">
-              <span><i class="fa-solid fa-bars" aria-hidden="true"></i></span>
-              <span class="sr-only">Open menu</span>
-            </a>
-            <div id="menu" class="menu">
-              <ul>
-                  <li><a href="#techStacks">Tech Stacks</a></li>
-                  <li><a href="#projects">Projects</a></li>
-              </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="banner" class="outer-space">
+          <div class="inner unified-banner">
+            <div class="profile-pic-container">
+              <img
+                src="images/profile3.JPG"
+                alt="Cindy Mae Ngoho"
+                class="profile-pic"
+              />
             </div>
-          </nav>
-        </header>
-
-        <main>
-          <section id="banner" class="outer-space">
-            <div class="inner unified-banner">
-              <div class="profile-pic-container">
-                <img src="images/profile3.JPG" alt="Cindy Mae Ngoho" class="profile-pic" />
-              </div>
-              <div class="content">
-                <h2 class="name">Cindy Mae Ngoho</h2>
-                <p class="role">Software Engineer</p>
-                <p class="about-text">
-                  I started my career as a teacher, where I learned how to break down complex ideas, stay curious, and design systems that help people grow. Over time, that the same mindset
-                  led me back to my first love: technology. Software engineering for me is another kind of teaching, but this time through tools and interfaces.
-                  My teaching mindset has stayed with me, so I’m always eager to help others learn how to code or provide any support I can. If you’re interested, feel free to follow me on my socials or send me a message.
-                  I’d love to connect!
-                </p>
-                <div class="contact-info">
-                  <h3>Get in touch!</h3>
-                  <ul class="footer-icons">
-                    <li><a href="https://github.com/Cindy0202-mae" class="icon brands fa-github" target="_blank" rel="noopener" aria-label="GitHub"><span class="label">GitHub</span></a></li>
-                    <li><a href="https://www.instagram.com/practicephotography101/" class="icon brands fa-instagram" target="_blank" rel="noopener" aria-label="Instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/cindy-ngoho/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="mailto:cindyngohojobhunt@gmail.com" class="icon fa-envelope" aria-label="Email" title="Email"><span class="label">Email</span></a></li>
-                  </ul>
-                </div>
+            <div class="content">
+              <h2 class="name">Cindy Mae Ngoho</h2>
+              <p class="role">Software Engineer</p>
+              <p class="about-text">
+                I started my career as a teacher, where I learned how to break
+                down complex ideas, stay curious, and design systems that help
+                people grow. Over time, that the same mindset led me back to my
+                first love: technology. Software engineering for me is another
+                kind of teaching, but this time through tools and interfaces. My
+                teaching mindset has stayed with me, so I’m always eager to help
+                others learn how to code or provide any support I can. If you’re
+                interested, feel free to follow me on my socials or send me a
+                message. I’d love to connect!
+              </p>
+              <div class="contact-info">
+                <h3>Get in touch!</h3>
+                <ul class="footer-icons">
+                  <li>
+                    <a
+                      href="https://github.com/Cindy0202-mae"
+                      class="icon brands fa-github"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="GitHub"
+                      ><span class="label">GitHub</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/practicephotography101/"
+                      class="icon brands fa-instagram"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Instagram"
+                      ><span class="label">Instagram</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/cindy-ngoho/"
+                      class="icon brands fa-linkedin-in"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="LinkedIn"
+                      ><span class="label">LinkedIn</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:cindyngohojobhunt@gmail.com"
+                      class="icon fa-envelope"
+                      aria-label="Email"
+                      title="Email"
+                      ><span class="label">Email</span></a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section id="techStacks" class="tech-stack main special">
-              <div id="tech-stack-content"></div>
-          </section>
+        <section id="techStacks" class="tech-stack main special">
+          <div id="tech-stack-content"></div>
+        </section>
 
-          <section id="projects" class="wrapper alt style2">
-              <div id="projects-content"></div>
-          </section>
-        </main>
+        <section id="projects" class="wrapper alt style2">
+          <div id="projects-content"></div>
+        </section>
+      </main>
 
-        <footer id="footer">
-            <ul class="copyright">
-                <li>&copy; 2024 <a href="https://www.linkedin.com/in/cindy-ngoho/" target="_blank" rel="noopener">Cindy Mae Ngoho</a></li>
-                <li>Design: <a href="http://html5up.net" rel="noopener">HTML5 UP</a></li>
-            </ul>
-        </footer>
+      <footer id="footer">
+        <ul class="copyright">
+          <li>
+            &copy; 2024
+            <a
+              href="https://www.linkedin.com/in/cindy-ngoho/"
+              target="_blank"
+              rel="noopener"
+              >Cindy Mae Ngoho</a
+            >
+          </li>
+          <li>
+            Design: <a href="http://html5up.net" rel="noopener">HTML5 UP</a>
+          </li>
+        </ul>
+      </footer>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
@@ -93,21 +173,21 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        // Inject tech stack content
-        fetch('tech-stack.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('tech-stack-content').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading tech stack:', error));
+      // Inject tech stack content
+      fetch("tech-stack.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("tech-stack-content").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading tech stack:", error));
 
-        // Inject projects content
-        fetch('projects.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('projects-content').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading projects:', error));
+      // Inject projects content
+      fetch("projects.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("projects-content").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading projects:", error));
     </script>
-</body>
+  </body>
 </html>
